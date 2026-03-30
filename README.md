@@ -233,7 +233,6 @@ ip link show type can
 
 
 ```bash
-sudo update-alternatives --config python3
 
 /* linux@linux-Latitude-5480:~$ sudo update-alternatives --config python3
 There are 2 choices for the alternative python3 (providing /usr/bin/python3).
@@ -245,12 +244,25 @@ There are 2 choices for the alternative python3 (providing /usr/bin/python3).
   2            /usr/bin/python3.8   2         manual mode
 
 Press <enter> to keep the current choice[*], or type selection number: 2
-/*
+*/
 ```
+
 
 ```bash
 cd /media/linux/5031ccbd-a675-4b86-b5ad-d83d0a73694d/stm32mp1
 source layers/meta-st/scripts/envsetup.sh
+```
+
+```bash
+sudo update-alternatives --config python3
+```
+
+```bash
+sudo apt-get install -y locales
+sudo locale-gen en_US.UTF-8
+sudo update-locale LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 ```
 
 ```bash
