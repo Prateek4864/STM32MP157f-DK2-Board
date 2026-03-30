@@ -4,12 +4,11 @@ This project runs an LVGL-based gauge dashboard on the **STM32MP157F-DK2** board
 
 ## Features
 
-- LVGL graphical dashboard with 8 animated gauges.
+- LVGL graphical dashboard.
 - DRM display backend for Linux framebuffer rendering.
 - UART access on STM32MP157F-DK2.
 - CAN enablement through device tree.
 - OpenSTLinux SDK-based cross compilation.
-- Application deployment using `scp`.
 - Kernel and DTB rebuild workflow.
 
 ## Hardware Used
