@@ -1,4 +1,4 @@
-# STM32MP157F-DK2 LVGL Gauge Dashboard
+# STM32MP157F-DK2
 
 This project runs an LVGL-based gauge dashboard on the **STM32MP157F-DK2** board using **DRM** for display output. It also documents the workflow for **UART**, **CAN**, **device tree modification**, and **OpenSTLinux build/deploy** steps.
 
