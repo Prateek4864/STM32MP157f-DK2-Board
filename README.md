@@ -231,11 +231,30 @@ ip link show type can
 
 ## Notes
 
-- Always modify `.dts` or `.dtsi`, then rebuild the `.dtb`.
-- Do not edit `.dtb` directly.
-- `python3` must be version 3.8 or newer for BitBake.
-- Ensure the board IP is correct before using `scp` or `ssh`.
+```bash
+cd /media/linux/5031ccbd-a675-4b86-b5ad-d83d0a73694d/stm32mp1
+source layers/meta-st/scripts/envsetup.sh
+```
 
-## License
+```bash
+//here I compile and build the image again
+// bitbake virtual/kernel -c compile -f
+// bitbake virtual/kernel -c deploy
 
-Add your project license here.
+cd /media/linux/5031ccbd-a675-4b86-b5ad-d83d0a73694d/stm32mp1/build-openstlinuxweston-stm32mp15-disco/
+```
+
+```bash
+//here I edit the file like .dts and .dtsi file
+
+cd /media/linux/5031ccbd-a675-4b86-b5ad-d83d0a73694d/stm32mp1/build-openstlinuxweston-stm32mp15-disco/stm32mp1/build-openstlinuxweston-stm32mp15-disco/tmp-glibc/deploy/images/stm32mp15-disco/kernel
+```
+
+```bash
+//here now i send the edit file with scp through
+//  scp FILE_NAME root@192.168.2.1:/usr/local/
+
+cd /media/linux/5031ccbd-a675-4b86-b5ad-d83d0a73694d/stm32mp1/build-openstlinuxweston-stm32mp15-disco/tmp-glibc/work-shared/stm32mp15-disco/kernel-source/arch/arm/boot/dts/
+```
+
+
