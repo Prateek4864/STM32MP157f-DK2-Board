@@ -231,6 +231,23 @@ ip link show type can
 
 ## Notes
 
+
+```bash
+sudo update-alternatives --config python3
+
+/* linux@linux-Latitude-5480:~$ sudo update-alternatives --config python3
+There are 2 choices for the alternative python3 (providing /usr/bin/python3).
+
+  Selection    Path                Priority   Status
+------------------------------------------------------------
+  0            /usr/bin/python3.8   2         auto mode
+* 1            /usr/bin/python3.6   1         manual mode
+  2            /usr/bin/python3.8   2         manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 2
+/*
+```
+
 ```bash
 cd /media/linux/5031ccbd-a675-4b86-b5ad-d83d0a73694d/stm32mp1
 source layers/meta-st/scripts/envsetup.sh
